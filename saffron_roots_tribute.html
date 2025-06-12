@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saffron Roots: Youth Wing Legacy</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:ital,wght@0,400;1,700&display=swap');
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #ff9933 0%, #ffffff 40%, #138808 100%);
+      color: #2c2c2c;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-x: hidden;
+    }
+    a {
+      color: #d84315;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #b3360e;
+      text-decoration: underline;
+    }
+    header {
+      background: #fff8e1;
+      text-align: center;
+      padding: 2.5rem 1rem 4rem;
+      box-shadow: 0 4px 12px rgba(255, 153, 51, 0.25);
+    }
+    @keyframes lotus-glow {
+      0%, 100% { filter: drop-shadow(0 0 6px #f57c00); }
+      50% { filter: drop-shadow(0 0 18px #ff6f00); }
+    }
+    header .lotus {
+      width: 100px;
+      animation: lotus-glow 3s infinite ease-in-out;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.8rem;
+      color: #bf360c;
+      text-shadow: 1px 1px 3px #f57c00;
+      margin-bottom: 0.3rem;
+    }
+    header .slogan {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #d84315;
+      letter-spacing: 1.2px;
+      font-style: italic;
+      text-shadow: 1px 1px 1px #ffa726;
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 15px;
+      padding: 2rem 2.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .section-title {
+      font-family: 'Merriweather', serif;
+      font-size: 2rem;
+      color: #bf360c;
+      border-bottom: 3px solid #ff6f00;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      text-shadow: 0 1px 1px #ffa726;
+    }
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.65;
+      color: #4e342e;
+      margin-bottom: 1.4rem;
+      font-weight: 500;
+    }
+    .leaders {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      justify-content: center;
+    }
+    .leader-card {
+      background: #fff3e0;
+      border-radius: 12px;
+      padding: 1.4rem 1.8rem;
+      box-shadow: 0 4px 12px rgba(255, 152, 0, 0.2);
+      flex: 1 1 260px;
+      max-width: 280px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .leader-card:hover {
+      box-shadow: 0 10px 25px rgba(255, 152, 0, 0.5);
+      transform: translateY(-6px);
+    }
+    .leader-name {
+      font-family: 'Merriweather', serif;
+      font-size: 1.25rem;
+      color: #bf360c;
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+    }
+    .leader-role {
+      font-size: 1rem;
+      color: #6d4c41;
+      font-weight: 600;
+    }
+    .placeholder {
+      font-style: italic;
+      color: #8d6e63;
+      font-weight: 600;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 1.1rem;
+      letter-spacing: 0.8px;
+    }
+    footer {
+      background: linear-gradient(90deg, #ff9933, #138808, #ffffff);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: inset 0 0 35px #d84315;
+      margin-top: auto;
+      color: #4e342e;
+      font-family: 'Merriweather', serif;
+    }
+    footer .footer-lotus {
+      width: 60px;
+      margin-bottom: 1rem;
+      animation: lotusGlowPulse 4s infinite ease-in-out;
+      filter: drop-shadow(0 0 12px #ff6f00);
+    }
+    @keyframes lotusGlowPulse {
+      0%, 100% { filter: drop-shadow(0 0 12px #ff6f00); }
+      50% { filter: drop-shadow(0 0 25px #bf360c); }
+    }
+    footer p {
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-shadow: 1px 1px 2px #fff3e0;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Bharatiya_Janata_Party_logo.svg" alt="Lotus Logo" class="lotus" />
+  <h1>Saffron Roots: Youth Wing Legacy</h1>
+  <div class="slogan">Leadership, Vision & Youth Empowerment (2011–2013)</div>
+</header>
+
+<section>
+  <div class="section-title">Saffron Roots as District President</div>
+  <p class="about-text">
+    “Saffron Roots: Youth Wing Legacy” is a humble tribute to the passionate youth leaders of BJP Jabalpur who served between 2011 and 2013. This platform is dedicated especially to <strong>Sandeep Singh Lodhi</strong> whose leadership, vision, and commitment as a guiding force inspired a generation of young karyakartas. Through this digital memorial, we aim to preserve their dedication, highlight their efforts, and ensure their legacy continues to inspire the youth of today and tomorrow.”
+  </p>
+  <p class="about-text">
+    During his tenure, he initiated the Swami Vivekanand Sandesh Yatra and inspired over 75,000 young individuals in Jabalpur to join the movement. This platform celebrates the vibrant spirit, commitment, and contributions of that era.
+  </p>
+</section>
+
+<section>
+  <div class="section-title">Youth Leadership</div>
+  <div class="leaders">
+    <div class="leader-card">
+      <div class="leader-name">Santosh Badkare</div>
+      <div class="leader-role">Secretary (Currently MLA)</div>
+    </div>
+    <div class="leader-card">
+      <div class="leader-name">Dhanesh Patel</div>
+      <div class="leader-role">Mantri</div>
+    </div>
+    <div class="leader-card">
+      <div class="leader-name">Akhilesh Vairagi</div>
+      <div class="leader-role">Upadhyaksh</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-title">just a Tribute</div>
+  <p class="placeholder">[Mini GIF Tribute will appear here soon]</p>
+</section>
+
+<section>
+  <div class="section-title">Gallery</div>
+  <p class="placeholder">Gallery will appear here soon.</p>
+</section>
+
+<section style="text-align:center; margin: 3rem 0;">
+  <a href="https://www.bjp.org/" target="_blank" rel="noopener noreferrer">
+    Visit BJP Official Website →
+  </a>
+</section>
+
+<footer>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Bharatiya_Janata_Party_logo.svg" alt="Lotus Logo" class="footer-lotus" />
+  <p>सबका साथ, सबका विकास, सबका विश्वास</p>
+</footer>
+
+</body>
+</html>

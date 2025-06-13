@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Saffron Roots: Youth Wing Legacy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:ital,wght@0,400;1,700&display=swap');
     * {
       box-sizing: border-box;
       margin: 0; padding: 0;
@@ -18,18 +19,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      overflow-x: hidden;
     }
-    a {
-      color: #d84315;
-      font-weight: 600;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    a:hover {
-      color: #b3360e;
-      text-decoration: underline;
-    }
+
     header {
       background: #fff8e1;
       text-align: center;
@@ -40,7 +31,7 @@
       0%, 100% { filter: drop-shadow(0 0 6px #f57c00); }
       50% { filter: drop-shadow(0 0 18px #ff6f00); }
     }
-    header .lotus {
+    .lotus {
       width: 100px;
       animation: lotus-glow 3s infinite ease-in-out;
       margin-bottom: 1rem;
@@ -50,9 +41,8 @@
       font-size: 2.8rem;
       color: #bf360c;
       text-shadow: 1px 1px 3px #f57c00;
-      margin-bottom: 0.3rem;
     }
-    header .slogan {
+    .slogan {
       font-weight: 700;
       font-size: 1.3rem;
       color: #d84315;
@@ -60,10 +50,11 @@
       font-style: italic;
       text-shadow: 1px 1px 1px #ffa726;
     }
+
     section {
-      max-width: 900px;
+      max-width: 960px;
       margin: 3rem auto;
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.9);
       border-radius: 15px;
       padding: 2rem 2.5rem;
       box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -75,17 +66,15 @@
       border-bottom: 3px solid #ff6f00;
       padding-bottom: 0.3rem;
       margin-bottom: 1rem;
-      letter-spacing: 1.2px;
       text-transform: uppercase;
-      text-shadow: 0 1px 1px #ffa726;
     }
     .about-text {
       font-size: 1.1rem;
       line-height: 1.65;
       color: #4e342e;
       margin-bottom: 1.4rem;
-      font-weight: 500;
     }
+
     .leaders {
       display: flex;
       flex-wrap: wrap;
@@ -110,7 +99,6 @@
       font-family: 'Merriweather', serif;
       font-size: 1.25rem;
       color: #bf360c;
-      margin-bottom: 0.4rem;
       font-weight: 700;
     }
     .leader-role {
@@ -118,29 +106,46 @@
       color: #6d4c41;
       font-weight: 600;
     }
-    .placeholder {
-      font-style: italic;
-      color: #8d6e63;
-      font-weight: 600;
-      text-align: center;
-      padding: 1.5rem 0;
-      font-size: 1.1rem;
-      letter-spacing: 0.8px;
+
+    .glider-contain {
+      position: relative;
     }
+    .gallery-img {
+      width: 100%;
+      border-radius: 12px;
+      border: 4px solid #ffcc80;
+      box-shadow: 0 0 12px rgba(255, 152, 0, 0.7);
+    }
+
+    .glider-prev, .glider-next {
+      background-color: #f57c00;
+      border: none;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.5rem;
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      z-index: 2;
+      cursor: pointer;
+    }
+    .glider-prev { left: -20px; }
+    .glider-next { right: -20px; }
+
     footer {
       background: linear-gradient(90deg, #ff9933, #138808, #ffffff);
       padding: 2rem 1rem;
       text-align: center;
       box-shadow: inset 0 0 35px #d84315;
-      margin-top: auto;
       color: #4e342e;
       font-family: 'Merriweather', serif;
     }
-    footer .footer-lotus {
+    .footer-lotus {
       width: 60px;
       margin-bottom: 1rem;
       animation: lotusGlowPulse 4s infinite ease-in-out;
-      filter: drop-shadow(0 0 12px #ff6f00);
     }
     @keyframes lotusGlowPulse {
       0%, 100% { filter: drop-shadow(0 0 12px #ff6f00); }
@@ -149,7 +154,6 @@
     footer p {
       font-size: 1.15rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
       text-shadow: 1px 1px 2px #fff3e0;
     }
   </style>
@@ -191,13 +195,34 @@
 </section>
 
 <section>
-  <div class="section-title">just a Tribute</div>
-  <p class="placeholder">[Mini GIF Tribute will appear here soon]</p>
-</section>
-
-<section>
   <div class="section-title">Gallery</div>
-  <p class="placeholder">Gallery will appear here soon.</p>
+  <div class="glider-contain">
+    <button class="glider-prev">‹</button>
+    <div class="glider">
+      <!-- Images -->
+      <img src="images/IMG-20250612-WA0000.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0001.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0002.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0003.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0004.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0005.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0006.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0007.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0008.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0009.jpg" class="gallery-img" />
+      <img src="images/IMG-20250612-WA0010.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0000.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0006.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0007.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0008.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0009.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0010.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0011.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0012.jpg" class="gallery-img" />
+      <img src="images/IMG-20250613-WA0013.jpg" class="gallery-img" />
+    </div>
+    <button class="glider-next">›</button>
+  </div>
 </section>
 
 <section style="text-align:center; margin: 3rem 0;">
@@ -210,6 +235,27 @@
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Bharatiya_Janata_Party_logo.svg" alt="Lotus Logo" class="footer-lotus" />
   <p>सबका साथ, सबका विकास, सबका विश्वास</p>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script>
+  new Glider(document.querySelector('.glider'), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next'
+    },
+    scrollLock: true,
+    rewind: true,
+    duration: 1
+  });
+
+  setInterval(() => {
+    const glider = document.querySelector('.glider')._glider;
+    glider.scrollItem((glider.slide + 1) % glider.slides.length);
+  }, 3000);
+</script>
 
 </body>
 </html>
